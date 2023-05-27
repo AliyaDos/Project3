@@ -1,0 +1,42 @@
+.player_avatar, .computer_avatar{
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+
+.computer_avatar{
+    transform: scale(-1, 1);
+}
+
+.studio {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+    background: #F6F6F6;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    background: #F6F6F6;
+}
+
+.scoreboard, .panel{
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    height: 50px;
+}
+
+.playerscore, .computerscore, .panel div{
+    padding: 15px 40px;
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.panel div{
+    cursor: pointer;
+}

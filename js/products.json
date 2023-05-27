@@ -1,0 +1,66 @@
+[
+	{
+		"id": 1,
+		"title": "Band Ring",
+		"itemsInBox": 2018,
+		"weight": 15,
+		"price": 79,
+		"imgSrc": "ring1.png"
+	},
+	{
+		"id": 2,
+		"title": "T1 Ring",
+		"itemsInBox": 2020,
+		"weight": 20,
+		"price": 189,
+		"imgSrc": "ring2.png"
+	},
+	{
+		"id": 3,
+		"title": "Five-row Ring",
+		"itemsInBox": 2017,
+		"weight": 17,
+		"price": 399,
+		"imgSrc": "ring3.png"
+	},
+	{
+		"id": 4,
+		"title": "Soleste V ring",
+		"itemsInBox": 2020,
+		"weight": 15,
+		"price": 119,
+		"imgSrc": "ring4.png"
+	},
+	{
+		"id": 5,
+		"title": "Vine Band Ring",
+		"itemsInBox": 2021,
+		"weight": 20,
+		"price": 359,
+		"imgSrc": "ring5.png"
+	},
+	{
+		"id": 6,
+		"title": "Love Ring",
+		"itemsInBox": 2023,
+		"weight": 16,
+		"price": 59,
+		"imgSrc": "ring6.png"
+	},
+	{
+		"id": 7,
+		"title": "Open Heart Ring",
+		"itemsInBox": 2017,
+		"weight": 23,
+		"price": 189,
+		"imgSrc": "ring7.png"
+	},
+	{
+		"id": 8,
+		"title": "Narrow Ring",
+		"itemsInBox": 2021,
+		"weight": 20,
+		"price": 189,
+		"imgSrc": "ring8.png"
+	}
+]

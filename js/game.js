@@ -26,6 +26,51 @@ const createGame = function() {
     scoreBoard = createScoreBoard();
     studio = createStudio();
     panel = createGamePanel();
+
+    scoreBoard.player.addEventListener('DOMSubtreeModified', checkScore);
+    scoreBoard.computer.addEventListener('DOMSubtreeModified', checkScore);
+}
+
+const checkScore = function() {
+    const playerScore = parseInt(scoreBoard.player.innerHTML);
+    const computerScore = parseInt(scoreBoard.computer.innerHTML);
+
+    if (playerScore === 3) {
+        showWinPopup();
+    };
+
+    if (computerScore === 3) {
+        showLoosePopup();
+    }
+}
+
+const showWinPopup = function() {
+    const popup = document.createElement('div');
+    popup.classList.add('popup');
+    
+    const message = document.createElement('div');
+    message.classList.add('message');
+    message.innerHTML = "Congratulations! You've won a coupon for 10% off any product in our store.";
+    
+    const imageContainer = document.createElement('div');
+    imageContainer.classList.add('image-container');
+    
+    // You can replace 'path/to/your/image.jpg' with the actual path to your image
+    const image = document.createElement('img');
+    image.src = 'img/off.jpeg';
+    
+    imageContainer.appendChild(image);
+    popup.appendChild(message);
+    popup.appendChild(imageContainer);
+    
+    document.body.appendChild(popup);
+  }
+
+const showLoosePopup = function() {
+    const popup = document.createElement('div');
+    popup.classList.add('popup');
+    popup.innerHTML = "You lost :( Don't be discouraged, try your luck next time!";
+    document.body.appendChild(popup);
 }
 
 const createScoreBoard = function() {
